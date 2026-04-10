@@ -10183,6 +10183,20 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+a.header__logo.logo,
+a.header__logo.logo:visited,
+a.header__logo.logo:hover,
+a.header__logo.logo:active,
+a.header__logo.logo:focus {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+a.header__logo.logo svg,
+a.header__logo.logo svg use {
+  fill: #000 !important;
+}
+
 @media (min-width: 992px) {
   .header__mobile {
     -webkit-box-flex: 1;
