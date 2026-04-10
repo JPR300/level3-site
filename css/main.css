@@ -10171,6 +10171,16 @@ a:hover, a:focus {
   margin-right: 20px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  color: #000 !important;
+  text-decoration: none;
+}
+
+.header__logo:visited,
+.header__logo:hover,
+.header__logo:active,
+.header__logo:focus {
+  color: #000 !important;
+  text-decoration: none;
 }
 
 @media (min-width: 992px) {
