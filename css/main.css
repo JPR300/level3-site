@@ -6802,6 +6802,27 @@ a:hover, a:focus {
   margin-bottom: 0;
 }
 
+.project-video {
+  width: 100%;
+  height: 680px; /* matches your design */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 715px;
+  aspect-ratio: 16 / 9;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 /* 3.26 Portfolio section */
 .portfolio-section {
   padding-top: 100px;
