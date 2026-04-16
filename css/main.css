@@ -6802,6 +6802,8 @@ a:hover, a:focus {
   margin-bottom: 0;
 }
 
+/* Wrapper for YouTube video - Property Marketplace page */
+
 .project-video {
   width: 100%;
   height: 680px; /* matches your design */
@@ -6821,6 +6823,31 @@ a:hover, a:focus {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* Wrapper for portrait mp4 video - Superlounge page */
+
+.project-video-portrait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portrait-video-wrapper {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 9 / 16;
+  margin: 0 auto;
+  background: #000;
+  overflow: hidden;
+}
+
+.portrait-video-wrapper video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  background: #000;
 }
 
 /* 3.26 Portfolio section */
