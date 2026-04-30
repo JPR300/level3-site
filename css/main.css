@@ -40,6 +40,7 @@
 	2.31 Statistics block
 	2.32 Section with partners logo
 	2.33 Mobile canvas
+  2.34 JPR Add-on - Lightbox image gallery
 
 3. PAGES SECTIONS
 
@@ -4242,6 +4243,96 @@ a:hover, a:focus {
   .mobile-canvas__close:hover::before, .mobile-canvas__close:hover::after, .mobile-canvas__close:focus::before, .mobile-canvas__close:focus::after {
     border-top-color: #fffe55;
   }
+}
+
+/* 2.34 Lightbox image gallery*/
+.book-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.book-preview {
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-preview:hover {
+  transform: scale(1.04);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  color: white;
+  font-size: 42px;
+  cursor: pointer;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 85%;
+  max-height: 85%;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Arrows */
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 60px;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  user-select: none;
+}
+
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  color: #ccc;
 }
 
 /*** 3. PAGES SECTIONS ***/
