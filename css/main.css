@@ -4338,12 +4338,8 @@ a:hover, a:focus {
 /* This is part of the above code (2.34), but makes the back book cover site spaced on mobile.*/
 
 @media (max-width: 991px) {
-  .book-gallery {
-    margin-bottom: 50px !important;
-  }
-
   .book-cover-column {
-    margin-top: 50px !important;
+    margin-top: 20px !important;
   }
 }
 
