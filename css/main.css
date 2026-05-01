@@ -4335,6 +4335,14 @@ a:hover, a:focus {
   color: #ccc;
 }
 
+/* This is part of the above code (2.34), but makes the back book cover site spaced on mobile.*/
+
+@media (max-width: 767px) {
+  .book-cover-column {
+    margin-top: 45px;
+  }
+}
+
 /*** 3. PAGES SECTIONS ***/
 /* 3.10 Hero section in homepage */
 .hero {
