@@ -9188,6 +9188,20 @@ a:hover, a:focus {
   }
 }
 
+/* BigBowl rate card add-on for note text adjustment */
+
+.bigbowl-rate-note {
+  margin-top: -35px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .bigbowl-rate-note {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+}
+
 /* 4.20 About us page */
 .about-us {
   padding-bottom: 70px;
