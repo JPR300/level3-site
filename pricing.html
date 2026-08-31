@@ -1051,7 +1051,29 @@
   <script src="js/libs/jquery.pagepiling.js"></script>
   <script src="js/libs/simpleParallax.min.js"></script>
   <!-- JavaScript-->
+
+<!-- Javascript for BigBowl rate card url anchor -->
   <script src="js/main.js"></script>
+
+  <script>
+  window.addEventListener("load", function () {
+    const parameters = new URLSearchParams(window.location.search);
+
+    if (parameters.get("section") === "bigbowl-advertising") {
+      const target = document.getElementById("bigbowl-advertising");
+
+      if (target) {
+        setTimeout(function () {
+          target.scrollIntoView({
+            behavior: "auto",
+            block: "start"
+          });
+        }, 300);
+      }
+    }
+  });
+</script>
+
 </body>
 
 </html>
