@@ -685,6 +685,52 @@
               </div>
             </div>
           </div>
+          <!--The from starts from here-->
+          <div class="contact-section__aside col-12 col-lg" data-aos="fade-up">
+              <div class="discuss-project discuss-project--no-padding col-12">
+                <div class="discuss-project__wrapper" data-aos="fade-up">
+                  <div class="discuss-project__title" data-aos="fade-up">Send request</div>
+                  
+                  <form id="contact-form" action="https://formspree.io/f/mjgpdopb" method="POST">
+  <input type="hidden" name="_subject" value="New enquiry from Level 3 website">
+
+  <div class="row justify-content-between gx-0">
+    <div class="col-12" data-aos="fade-up">
+      <label class="discuss-project__field field">
+        <input type="text" name="name" required>
+        <span class="field__hint">Name</span>
+      </label>
+    </div>
+
+    <div class="col-12" data-aos="fade-up">
+      <label class="discuss-project__field field">
+        <input type="email" name="email" required>
+        <span class="field__hint">Email</span>
+      </label>
+    </div>
+
+    <div class="col-12" data-aos="fade-up">
+      <label class="discuss-project__field discuss-project__field--textarea field">
+        <textarea name="message" required></textarea>
+        <span class="field__hint">Message</span>
+      </label>
+    </div>
+
+    <div class="discuss-project__bottom col-12">
+      <button class="discuss-project__send btn--theme-black btn" type="submit" data-aos="fade-up">
+        <span class="btn__text">Submit</span>
+        <span class="btn__icon">
+          <svg width="19" height="19">
+            <use xlink:href="#link-arrow"></use>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</form>
+
+
+          <!-- Orignal form
           <div class="service-detail__discuss discuss-project discuss-project--no-padding col-12">
             <div class="discuss-project__wrapper" data-aos="fade-up">
               <div class="discuss-project__title" data-aos="fade-up">Get in Touch</div>
@@ -731,53 +777,58 @@
                   </div>
                 </div>
               </form>
+              -->
             </div>
           </div>
         </div>
       </article>
     </main>
-    <footer class="footer __js_fixed-footer">
+   <footer class="footer __js_fixed-footer">
       <div class="footer__container container container--size-large">
         <div class="footer__grid">
-          <a class="footer__logo" href="agency-default.html">
+          <a class="footer__logo" href="index.html">
             <svg width="59" height="242">
-              <use xlink:href="#vertical-logo"></use>
+              <use xlink:href="#logo-vertical-level3"></use>
             </svg>
           </a>
           <div class="footer__phone">
-            <a href="tel:+34255216021">+3(425) 521 60 21</a>
+            <a href="tel:+34255216021">+66(0) 955 263 447</a>
           </div>
           <div class="footer__menu">
             <div class="footer__title">Quick Links</div>
             <ul class="footer__menu-list">
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="agency-default.html">Home</a>
+                <a class="footer__menu-link" href="index.html">Home</a>
               </li>
+              <!--
               <li class="footer__menu-item">
                 <a class="footer__menu-link" href="about-us.html">Pages</a>
               </li>
+              -->
+              <!--
               <li class="footer__menu-item">
                 <a class="footer__menu-link" href="blog-masonry.html">Blog</a>
               </li>
+              -->
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="contact.html">Contact</a>
+              <a class="footer__menu-link" href="index.html#contact">Contact</a>
               </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-link" href="projects-masonry.html">Portfolio</a>
+                            <li class="footer__menu-item">
+                <a class="footer__menu-link" href="single-project-no-thrills.html">Portfolio</a>
               </li>
-            </ul>
+              </ul>
           </div>
           <div class="footer__menu">
             <div class="footer__title">Follow</div>
             <ul class="footer__menu-list">
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="#">Facebook</a>
+                <a class="footer__menu-link" href="https://www.facebook.com/Level3Thailand">Facebook</a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="#">Twitter</a>
+                <a class="footer__menu-link" href="https://x.com/Level3_Media">X</a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link" href="#">Instagram</a>
+                <a class="footer__menu-link" href="https://www.instagram.com/level_3_thailand/" target="_blank" rel="noopener noreferrer">Instagram</a>
               </li>
               <li class="footer__menu-item">
                 <a class="footer__menu-link" href="#">LinkedIn</a>
@@ -785,23 +836,32 @@
             </ul>
           </div>
           <div class="footer__feedback">
-            <div class="footer__title">Sign up to our newsletter</div>
-            <form class="footer__feedback-form" action="#" method="post">
-              <label class="footer__feedback-field field">
-                <input type="email" name="email">
-                <span class="field__hint">E-mail</span>
-              </label>
-              <button class="footer__feedback-send arrow-btn arrow-btn--size-large" type="button">
-                <svg width="75" height="75">
-                  <use xlink:href="#link-arrow"></use>
-                </svg>
-              </button>
-            </form>
-            <div class="footer__feedback-notice">This site is protected by reCAPTHCHA and the <a href="#" target="_blank">Google Privacy Policy</a> and <a href="#" target="_blank">Terms of Service apply</a>.</div>
-          </div>
-          <div class="footer__bottom">
-            <div class="footer__copyright">© Centrix 2021. All Rights Resevered</div>
-            <a class="footer__privacy" href="#">Privacy Policy</a>
+  <div class="footer__title">Sign up to our newsletter</div>
+  <form id="newsletter-form" class="footer__feedback-form" action="https://formspree.io/f/mjgpdopb" method="POST">
+        <input type="hidden" name="_subject" value="Newsletter Sign Up Email Request">
+    <input type="hidden" name="form_type" value="Newsletter Signup">
+    <label class="footer__feedback-field field">
+      <input type="email" name="email" required>
+      <span class="field__hint">E-mail</span>
+    </label>
+    <button class="footer__feedback-send arrow-btn arrow-btn--size-large" type="submit">
+      <svg width="75" height="75">
+        <use xlink:href="#link-arrow"></use>
+      </svg>
+    </button>
+  </form>
+  <!-- Success Message -->
+  <div id="newsletter-success" style="display:none; margin-top:20px;">
+    <p style="margin:0; font-weight:600;">Thank you for signing up.</p>
+    <p style="margin:5px 0 0 0;">You’ll receive updates from Level 3 shortly.</p>
+  </div>
+  <div class="footer__feedback-notice">
+    Stay updated with new projects, launches, and releases from Level 3.
+  </div>
+</div>
+<div class="footer__bottom">
+            <div class="footer__copyright">© Level 3 Media & Entertainment Ltd 2026. All Rights Resevered</div>
+            <a class="footer__privacy" href="index.html">Privacy Policy</a>
           </div>
         </div>
       </div>
@@ -822,6 +882,41 @@
   <script src="js/libs/simpleParallax.min.js"></script>
   <!-- JavaScript-->
   <script src="js/main.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const newsletterForm = document.getElementById("newsletter-form");
+  const newsletterSuccess = document.getElementById("newsletter-success");
+  if (!newsletterForm) return;
+  newsletterForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const data = new FormData(newsletterForm);
+    try {
+      const response = await fetch(newsletterForm.action, {
+        method: "POST",
+        body: data,
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+      if (response.ok) {
+        newsletterForm.reset();
+        newsletterForm.style.opacity = "0";
+
+        setTimeout(() => {
+          newsletterForm.style.display = "none";
+          newsletterSuccess.style.display = "block";
+        }, 300);
+      } else {
+        alert("Sorry, something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("Sorry, something went wrong. Please try again.");
+      console.error(error);
+    }
+  });
+});
+</script>
+
 </body>
 
 </html>
