@@ -226,6 +226,8 @@
 </a>
   <div class="navigation__dropdown">
     <ul class="navigation__dropdown-list">
+     
+     <!--previous code
       <li class="navigation__dropdown-item">
         <a href="javascript:void(0);" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' }); return false;">
           About us<span class="navigation__dropdown-icon">
@@ -235,15 +237,73 @@
           </span>
         </a>
       </li>
-      <li class="navigation__dropdown-item">
-        <a href="javascript:void(0);" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' }); return false;">
-          Services<span class="navigation__dropdown-icon">
-            <svg width="12" height="13">
-              <use xlink:href="#link-arrow"></use>
-            </svg>
-          </span>
-        </a>
-      </li>      
+    -->
+<!-- ABOUT US -->
+<li class="navigation__dropdown-item">
+  <a href="javascript:void(0);" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' }); return false;">
+    About us
+    <span class="navigation__dropdown-icon">
+      <svg width="12" height="13">
+        <use xlink:href="#link-arrow"></use>
+      </svg>
+    </span>
+  </a>
+</li>
+<!-- SERVICES -->
+<li class="navigation__dropdown-item services-menu"
+    onmouseleave="
+      this.querySelector('.services-submenu').style.display='none';
+      this.querySelector('a').setAttribute('aria-expanded','false');
+    ">
+
+  <a href="#"
+     aria-expanded="false"
+     onclick="
+       event.preventDefault();
+       event.stopPropagation();
+
+       var submenu = this.nextElementSibling;
+       var opening = submenu.style.display === 'none';
+
+       submenu.style.display = opening ? 'block' : 'none';
+
+       this.setAttribute('aria-expanded', String(opening));
+     ">
+     
+    Services
+    <span class="navigation__dropdown-icon">
+      <svg width="12" height="13">
+        <use xlink:href="#link-arrow"></use>
+      </svg>
+    </span>
+
+  </a>
+  <!-- HIDDEN SUBMENU -->
+  <ul class="services-submenu"
+      style="
+        display: none;
+        list-style: none;
+        padding-left: 24px;
+        margin-top: 12px;
+        margin-bottom: 10px;
+      ">
+    <li>
+      <a href="service-detail-commercial-video.html">
+        Commercial Video
+      </a>
+    </li>
+  </ul>
+</li>
+  <!-- HIDDEN SUBMENU -->
+  <ul class="services-submenu" style="display: none; padding-left: 20px;">
+    <li>
+      <a href="service-detail-commercial-video.html">
+        Commercial Video
+      </a>
+    </li>
+  </ul>
+</li>
+     
     <li class="navigation__dropdown-item">
       <a href="single-project-no-thrills.html">
         Portfolio
