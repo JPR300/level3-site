@@ -370,6 +370,40 @@ const currentPage = window.location.pathname
 
 }
 
+// LEVEL 3 - HOMEPAGE LOGO TURNS WHITE ON SCROLL
+
+if (currentPage === 'index.html' || currentPage === '') {
+
+  const homeLogoStyle = document.createElement('style');
+
+  homeLogoStyle.textContent = `
+    .l3-master-header.l3-home-scrolled:not([data-l3-mobile="true"]) .header__logo {
+      color: #ffffff !important;
+    }
+  `;
+
+  document.head.appendChild(homeLogoStyle);
+
+  function updateHomeLogo() {
+
+    if (window.scrollY > 20) {
+      header.classList.add('l3-home-scrolled');
+    } else {
+      header.classList.remove('l3-home-scrolled');
+    }
+
+  }
+
+  updateHomeLogo();
+
+  window.addEventListener('scroll', updateHomeLogo, {
+    passive: true
+  });
+
+  window.addEventListener('pageshow', updateHomeLogo);
+
+}
+
 
 
   const toggle = header.querySelector('.header__menu-toggle');
